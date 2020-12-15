@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+}
+#landing{
+    
+    background: skyblue;
+    height: 100vh;
+    min-height: 770px;
+    position:relative;
+}
+
+#navbar{
+    /*background: black;*/
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    padding: 5px 10px
+}
+nav ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px 150px 0 150px;
+    
+}
+
+.site-title{
+    text-align: center;
+}
+.site-title h5{
+    margin-top: 10px;
+}
+
+.underline{
+    background: brown;
+    height: 8px;
+    width: 100%;
+}
+.name{
+    margin: 10px 40px;
+}
+
+
+.info-row{
+
+    margin-top:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box{
+    display: flex;
+    margin-right: 30px;
+}
+
+.my-picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-text{
+    max-width: 350px;
+    z-index: 999;
+}
+
+
+.tree-box{
+    height: 300px;
+    width: 385px;
+    position:absolute;
+    bottom: 10px;
+    left: 0;
+    display:flex;
+    justify-content: center;
+}
+
+.tree{
+    align-self: flex-end;
+    animation: tree 40s ease-in infinite;
+}
+
+.palm-tree{
+    align-self: flex-end;
+    animation: palm-tree 40s ease-in infinite;
+}
+
+.waterfall{
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+}
+
+@keyframes tree{
+    0%{height: 0px}
+    2%{height: 0px}
+    3%{height: 300px}
+    48%{height: 300px}
+    49%{height: 0px}   
+    100%{height: 0px}   
+}
+
+
+@keyframes palm-tree{
+    0%{height: 0px}
+    50%{height: 0px}
+    51%{height: 300px}
+    98%{height: 300px}
+    9%{height: 0px}   
+    100%{height: 0px}   
+}
+
+.grass{
+    width: 100%;
+    height: 55px;
+    background: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-row{
+    height: 300px;
+    background: lightcoral;
+    border-top: 3px solid black;
+}
+
+@media only screen and (max-width: 700px) {
+    #landing{
+        height: auto;
+    }
+    .hidden-mobile{
+        display:none;
+    }
+    .top-row{
+        justify-content: center;
+        margin:0;
+    }
+    .info-row{
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .info-row .img-box{
+        margin:0;
+    }
+    .info-row p{
+        padding: 0 10px 10px 10px;
+        margin-bottom: 50px;
+    }
+    .grass{
+        height: 25px;
+    }
+  }

@@ -1,0 +1,50 @@
+.grid-container{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: calc(30px * 5);
+    grid-auto-rows: minmax(min-content, max-content);
+    animation: bounce 2s linear infinite;
+}
+.cloud{
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 0;
+    /*animation: shrinkMargin 3s ease-in ;*/
+}
+
+@keyframes shrinkMargin{
+    from{
+        margin: 50px;
+        opacity: 0;
+    }
+    to{
+        margin: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes bounce {
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(-6px);}
+    75%{transform: translateY(6px);}
+    100%{transform: translateY(0px);}
+
+    
+}
+.one{
+    grid-column-start: 2;
+}
+.three{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.four{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.nine{
+    grid-column-start: 2;
+}
