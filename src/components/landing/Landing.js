@@ -23,7 +23,7 @@ function Landing() {
 
         <div className="info-row">
             <div className="img-box">
-                <img src={meImage} className="my-picture" />
+                <img src={meImage} alt="" className="my-picture" />
 
             </div>
             <div className="info-text">
@@ -33,8 +33,8 @@ function Landing() {
         </div>
         <div className="hidden-mobile tree-container">
             <div className="tree-box">
-                <img src={treeImage} className="tree" />
-                <img src={palmTreeImage} className="palm-tree"/>
+                <img src={treeImage} alt="" className="tree" />
+                <img src={palmTreeImage}  alt=""className="palm-tree"/>
             </div>
         </div>
         <div className="grass"></div>

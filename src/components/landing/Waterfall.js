@@ -110,7 +110,7 @@ function Waterfall() {
         p.stroke(255);
         p.strokeWeight(0);
         p.fill(20,20, 100);
-        if(this.type == 0)
+        if(this.type === 0)
           p.ellipse(this.pos.x, this.pos.y, this.r*2);
         else
           p.rect(this.pos.x + this.r, this.pos.y - this.r, this.r*2, this.r*2);
