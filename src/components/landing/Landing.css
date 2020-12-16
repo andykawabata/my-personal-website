@@ -5,7 +5,7 @@ body{
     
     background: skyblue;
     height: calc(100vh - (110px));
-    min-height: 300px;
+    min-height: 440px;
     position:relative;
 }
 
@@ -89,7 +89,7 @@ nav ul a{
 
 .tree-box{
     height: 300px;
-    width: 385px;
+    margin-left: 50px;
     position:absolute;
     bottom: 10px;
     left: 0;
@@ -172,4 +172,17 @@ nav ul a{
     .grass{
         height: 25px;
     }
+  }
+
+  
+  @media only screen and (max-width: 1080px) and (max-height: 710px) {
+
+    .tree-box{
+        margin-left: 8px;
+        height: 200px;
+    }
+    .tree, .palm-tree{
+     opacity: .6;
+    }
+   
   }

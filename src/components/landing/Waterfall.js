@@ -37,12 +37,13 @@ function Waterfall() {
       p.counter = p.increment(p.counter, 0);
       p.background(135, 206, 235);
       p.line(p.canvasX, p.lineY, p.lineX, p.lineY);
-      p.fill(90, 77, 65)
+      p.rect(0, p.canvasY - 40, p.canvasX, 40);
+      p.fill(97, 51, 24)
       p.stroke(0);
       p.cliff();
       //image(img, 0, 350, 300, 50)
       for(let i=0; i<p.circles.length; i++){
-        var gravity = p.createVector(0, 0.2);
+        var gravity = p.createVector(0, 0.15);
         p.circles[i].applyForce(gravity);
         p.circles[i].checkEdges();
         p.circles[i].update();
