@@ -1,0 +1,16 @@
+#navbar{
+    height: 110px;
+    background: skyblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#navbar ul li{
+    margin: 0 5px;
+}
+
+#navbar ul li:hover{
+    cursor: pointer;
+}

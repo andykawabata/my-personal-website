@@ -2,7 +2,7 @@ import './Project.css'
 
 function Project(props){
 
-    console.log(props)
+    
     const imageFilename = "mine.jpg";
     /*/////////////////////// DESKTOP ////////////////////////*/
     if(!props.isSmallScreen){

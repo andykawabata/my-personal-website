@@ -5,6 +5,7 @@
     width: calc(30px * 5);
     grid-auto-rows: minmax(min-content, max-content);
     animation: bounce 2s linear infinite;
+    z-index: 999;
 }
 .cloud{
     width: 30px;
