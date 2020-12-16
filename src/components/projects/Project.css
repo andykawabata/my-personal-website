@@ -26,15 +26,15 @@
 }
 
 .project-image{
-    width:200px;
-    height: 230px;
+    width:180px;
+    height: 225px;
     object-fit: cover;
 }
 .info-container{
     display: flex;
 }
 .main-info-container{
-    max-width:550px;
+    width:550px;
     padding-top: 8px;
     padding-left: 10px;
     display: flex;
@@ -66,7 +66,7 @@
 }
 .tech-list ul{
     padding-left: 30px;
-    
+    width: 132px;;
 }
 
 .button-container{
@@ -76,6 +76,7 @@
     padding-left: 8px;
     padding-right: 8px;
     background:var(--buttons-color);
+    min-width:80px;
 }
 .button-container button{
     width: 100%;
@@ -134,7 +135,7 @@
 }
 .project-image-mobile{
     width:150px;
-    height: 200px;
+    height: 187px;
     object-fit: cover;
 }
 .site-button-container-mobile{
@@ -152,4 +153,16 @@
     display: inline-block;
     font-size: 16px;
                 
+}
+
+@media only screen and (max-width: 1080px) {
+    .main-info-container{
+        width:450px;
+    }
+    .project-image{
+        width:140px;
+        height: 175px;
+        object-fit: cover;
+    }
+    
 }

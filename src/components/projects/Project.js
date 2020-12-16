@@ -9,7 +9,7 @@ function Project(props){
         return(
             <div className="project-container">
                 <div className="image-container">
-                    <img className="project-image" src={require('./data/project-images/'+ imageFilename ).default}/>
+                    <img className="project-image" src={props.data.imageUrl}/>
                 </div>
                 <div className="info-container">
                     <div className="main-info-container">
@@ -18,7 +18,7 @@ function Project(props){
                         <div className="link-container">
                             <p>
                                 <span><strong>Hosted At:&nbsp;&nbsp;</strong></span> 
-                                <a href="#">{props.data.siteUrl}</a>
+                                <a href={props.data.siteUrl} style={{fontSize: '.9em'}}>{props.data.siteUrl}</a>
                             </p>
                         </div>
                     </div>
@@ -31,8 +31,12 @@ function Project(props){
                         </ul>
                     </div>
                     <div className="button-container">
-                        <a href={props.data.siteUrl}><button className="site-button">View Site</button></a>
-                        <a href={props.data.codeUrl}><button className="github-button">View Code <br/> (GitHub) </button></a>
+                        {props.data.siteUrl !== "" &&
+                            <a href={props.data.siteUrl}><button className="site-button">View Site</button></a>
+                        }
+                        {props.data.codeUrl !== "" &&
+                            <a href={props.data.codeUrl}><button className="github-button">View Code <br/> (GitHub) </button></a>
+                        }
                     </div>
                 </div>
             </div>
@@ -43,16 +47,18 @@ function Project(props){
             <div class="project-container-mobile">
                 <div class="main-container-mobile">
                     <div class="image-container-mobile">
-                        <img class="project-image-mobile" src="https://webprofessionals.org/wp-content/uploads/2018/12/Static-Website.jpg"/>
+                        <img class="project-image-mobile" src={props.data.imageUrl}/>
                     </div>
                 
                     <div class="info-container-mobile">
-                        <h2><u>Project Title</u></h2>
-                        <p class="description">This is the description This is the description This is the description This is the description This is the description This is the description This is the description This is the description This is the description This is the description This is the description  This is the description This is the description This is the description This is the description This is the description This is the description This is the description </p>
+                        <h2><u>{props.data.title}</u></h2>
+                        <p class="description">{props.data.description}</p>
                     </div>
                 </div>
                 <div class="site-button-container-mobile">
-                    <a href="#"><button class="site-button-mobile">View Site</button></a>
+                    {props.data.siteUrl !== "" &&
+                        <a href={props.data.siteUrl}><button class="site-button-mobile">View Site</button></a>
+                    }
                 </div>
             </div>
         )
