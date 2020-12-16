@@ -27,7 +27,7 @@ function Landing() {
 
             </div>
             <div className="info-text">
-                <p>Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <p><strong>Greetings!</strong> My name is Andy. I am Computer Science student at The University of North Carolina, Greensboro. I love solving problems and bringing ideas to life through code. I made this website to showcase some of my coding projects. I will eventually add more to this bio, but for now this is all I have written. Thanks for visiting!
                 </p>
             </div>
         </div>
