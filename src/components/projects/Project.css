@@ -110,27 +110,29 @@
     
 .project-container-mobile{
     text-align: initial;
+    font-size: .9em;
     background: var(--main-color);
     display:inline-flex;
     flex-direction: column;
     margin: 20px 0;
     border: 0px solid black;
-    font-family: Calibri;
     filter: drop-shadow(-5px -6px 4px black);
     width: 100%;
 }
 
 .main-container-mobile{
-    display: flex;
+   
 }
 .info-container-mobile{
     padding-left: 10px;
     padding-right: 7px;
 }
 .image-container-mobile{
-    background: slategray;
+
+    background: var(--tech-color);
     display: flex;
     align-items: center;
+    justify-content: center;
     word-break: break-all;
 }
 .project-image-mobile{

@@ -26,7 +26,7 @@ const data = [
         ]
     },
     {
-        imageUrl: "https://i.imgur.com/LegZUcj.jpg",
+        imageUrl: "https://i.imgur.com/ITpK0YO.png",
         title: "ChatMap",
         description:"This is a location based chat app built with React and Firebase. The map zooms into a specified city in the USA and has markers on various points of interest within the city. Clicking on a marker brings up a chat window exclusive to that location, along with some general info about the location. Currently points of interest are added with a script and the state/city is specified in the url parameters. In the future, users will be able to add points of interest. It has a fully functional login system made with Firebase Authentication. Firebase Firestore is used as a NoSQL database. Deployed with Netlify.",
         siteUrl:"https://chatmap.netlify.app/North%20Carolina/Greensboro",

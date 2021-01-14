@@ -46,7 +46,7 @@ function Project(props){
         return(
             <div class="project-container-mobile">
                 <div class="main-container-mobile">
-                    <div class="image-container-mobile">
+                    <div class="image-container-mobile" >
                         <img class="project-image-mobile" src={props.data.imageUrl}/>
                     </div>
                 

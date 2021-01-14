@@ -27,7 +27,7 @@ function Landing() {
 
             </div>
             <div className="info-text">
-                <p><strong>Greetings!</strong> My name is Andy. I am Computer Science student at The University of North Carolina, Greensboro. I love solving problems and bringing ideas to life through code. I made this website to showcase some of my coding projects. I will eventually add more to this bio, but for now this is all I have written. Thanks for visiting!
+                <p><strong>Greetings!</strong> My name is Andy. I am Computer Science student at The University of North Carolina, Greensboro. I love solving problems and bringing ideas to life through code. I made this website to showcase some of my coding projects. Thanks for visiting!
                 </p>
             </div>
         </div>
