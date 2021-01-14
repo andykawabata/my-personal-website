@@ -36,7 +36,7 @@ function Projects(){
                     <p>
                         Applications and tools I've built in my free time to solve problems and experiment with new technologies.
                     </p>
-                    <img className="divider" src={divider}/>
+                    <img className="divider" src={divider} alt=""/>
                 </div>
             </div>
 
@@ -46,6 +46,8 @@ function Projects(){
                     if(value.isPersonal){
                         return <Project isSmallScreen={isSmallScreen} data={value}/>
                     }
+                    else
+                        return <div></div>
                 })}
             </div>
 
@@ -58,7 +60,7 @@ function Projects(){
                     <p>
                         Programs I've written for my Computer Science courses at UNCG.
                     </p>
-                    <img className="divider" src={divider}/>
+                    <img className="divider" src={divider} alt=""/>
                 </div>
             </div>
 
@@ -68,6 +70,8 @@ function Projects(){
                     if(!value.isPersonal){
                         return <Project isSmallScreen={isSmallScreen} data={value}/>
                     }
+                    else
+                        return <div></div>
                 })}
             </div>
         </div>

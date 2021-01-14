@@ -18,7 +18,7 @@ function Project(props){
                         <div className="link-container">
                             <p>
                                 <span><strong>Hosted At:&nbsp;&nbsp;</strong></span> 
-                                <a href={props.data.siteUrl} style={{fontSize: '.9em'}}>{props.data.siteUrl}</a>
+                                <a href={props.data.siteUrl} style={{fontSize: '.9em'}} target="_blank">{props.data.siteUrl}</a>
                             </p>
                         </div>
                     </div>
@@ -32,10 +32,10 @@ function Project(props){
                     </div>
                     <div className="button-container">
                         {props.data.siteUrl !== "" &&
-                            <a href={props.data.siteUrl}><button className="site-button">View Site</button></a>
+                            <a href={props.data.siteUrl} target="_blank"><button className="site-button">View Site</button></a>
                         }
                         {props.data.codeUrl !== "" &&
-                            <a href={props.data.codeUrl}><button className="github-button">View Code <br/> (GitHub) </button></a>
+                            <a href={props.data.codeUrl} target="_blank"><button className="github-button">View Code <br/> (GitHub) </button></a>
                         }
                     </div>
                 </div>
@@ -57,7 +57,7 @@ function Project(props){
                 </div>
                 <div class="site-button-container-mobile">
                     {props.data.siteUrl !== "" &&
-                        <a href={props.data.siteUrl}><button class="site-button-mobile">View Site</button></a>
+                        <a href={props.data.siteUrl} target="_blank"><button class="site-button-mobile">View Site</button></a>
                     }
                 </div>
             </div>

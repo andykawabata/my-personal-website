@@ -16,8 +16,8 @@
     display:inline-flex;
     border: 0px solid black;
     box-shadow: -0px -px;
-    font-family: Calibri;
     filter: drop-shadow(-5px -5px 2px black);
+ 
 }
 .image-container{
     display: flex;
