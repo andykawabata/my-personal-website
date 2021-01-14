@@ -42,6 +42,7 @@ function Waterfall() {
       p.stroke(0);
       p.cliff();
       //image(img, 0, 350, 300, 50)
+      
       for(let i=0; i<p.particles.length; i++){
         var gravity = p.createVector(0, 0.09);
         p.particles[i].applyForce(gravity);
@@ -92,9 +93,14 @@ function Waterfall() {
       checkEdges(){
     
         //if on line
-        if(this.pos.y >= p.lineY - this.r && this.pos.x >= p.lineX){
-          
+        if(this.pos.y >= p.lineY - this.r && this.pos.x >= p.lineX){    
           this.vel.y *= -.95;
+          this.acc.set(0,0);
+        }
+        //console.log(Math.abs(Math.floor(this.pos.y) - p.mouseY)<5)
+        
+        if(Math.abs(Math.floor(this.pos.y) - p.mouseY)<5  &&  Math.abs(Math.floor(this.pos.x) - p.mouseX)<5){
+          this.vel.y *= -.9;
           this.acc.set(0,0);
         }
       }
